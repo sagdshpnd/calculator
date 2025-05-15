@@ -12,44 +12,44 @@
             <div id = "display">
                 <div id = "expression">
                     <!--Display for expression-->
-                    13x1            
+                                
                 </div>
                 <div id = "result">
                     <!--Display for result-->
-                    =13
                 </div>
             </div>
         </div>
         <div id = "buttons">
             <!--<div id = "top-row">-->
                 <div id = "operations1">
-                    <button class = "op-key number" id = "clear">C</button>
-                    <button class = "op-key number" id = "invert">+/-</button>
-                    <button class = "op-key number" id = "percentage">%</button>
+                    <button class = "op-key number" data-type = "reset" id = "clear">C</button>
+                    <button class = "op-key number" data-type = "sqrt" id = "sqrt" value="√">&#8730;</button>
+                    <button class = "op-key number" data-type = "operator" id = "remainder" value = "%">%</button>
                 </div>
                 <div id = "operations2">
-                    <button class = "op-key number" id = "delete">←</button>
-                    <button class = "op-key number" id = "divide">/</button>
-                    <button class = "op-key number" id = "multiply">X</button>
-                    <button class = "op-key number" id = "subtract">-</button>
-                    <button class = "op-key number" id = "add">+</button>
+                    <button class = "op-key number" data-type = "backspace" id = "delete">←</button>
+                    <button class = "op-key number" data-type = "operator" id = "divide" value="/">&#247</button>
+                    <button class = "op-key number" data-type = "operator" id = "multiply" value="*">&#215</button>
+                    <button class = "op-key number" data-type = "operator" id = "subtract" value="-">&#45</button>
+                    <button class = "op-key number" data-type = "operator" id = "add" value="+">&#43</button>
                 </div>
             <!--</div>-->
         <div id = "numbers">
-            <button class = "number">7</button>
-            <button class = "number">8</button>
-            <button class = "number">9</button>
-            <button class = "number">4</button>
-            <button class = "number">5</button>
-            <button class = "number">6</button>
-            <button class = "number">1</button>
-            <button class = "number">2</button>
-            <button class = "number">3</button>
-            <button class = "number">0</button>
-            <button class = "number">.</button>
-            <button class = "number">=</button>
+            <button class = "number" data-type ="number" id = "digit-7" value = "7">7</button>
+            <button class = "number" data-type ="number" id = "digit-8" value = "8">8</button>
+            <button class = "number" data-type ="number" id = "digit-9" value = "9">9</button>
+            <button class = "number" data-type ="number" id = "digit-4" value = "4">4</button>
+            <button class = "number" data-type ="number" id = "digit-5" value = "5">5</button>
+            <button class = "number" data-type ="number" id = "digit-6" value = "6">6</button>
+            <button class = "number" data-type ="number" id = "digit-1" value = "1">1</button>
+            <button class = "number" data-type ="number" id = "digit-2" value = "2">2</button>
+            <button class = "number" data-type ="number" id = "digit-3" value = "3">3</button>
+            <button class = "number" data-type ="number" id = "digit-0" value = "0">0</button>
+            <button class = "number" data-type ="decimal" id = "decimal" value = ".">.</button>
+            <button class = "number" data-type ="equal" id = "equal" value = "=">&#61</button>
         </div>
     </div>
 </div>
+<script src = "js/script.js"></script>
 </body>
 </html>
